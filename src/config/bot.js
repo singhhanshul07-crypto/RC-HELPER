@@ -41,7 +41,7 @@ export const botConfig = {
     owners: process.env.OWNER_IDS?.split(",") || [],
 
     // Default wait time between command uses (in seconds).
-    defaultCooldown: 3, 
+    defaultCooldown: 1, 
 
     // If true, old commands are removed before re-registering.
     deleteCommands: false,
@@ -63,8 +63,8 @@ export const botConfig = {
 
     // Embed colors by application status.
     statusColors: {
-      pending: "#FFA500",
-      approved: "#00FF00",
+      pending: "#FF0000",
+      approved: "#FF0000",
       denied: "#FF0000",
     },
 
@@ -88,55 +88,55 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699", 
-      secondary: "#2F3136", 
+      primary: "#FF0000", 
+      secondary: "#FF0000", 
 
       // Standard status colors for success/error/warning/info messages.
-      success: "#57F287", 
-      error: "#ED4245", 
-      warning: "#FEE75C", 
-      info: "#3498DB", 
+      success: "#FF0000", 
+      error: "#FF0000", 
+      warning: "#FF0000", 
+      info: "#FF0000", 
 
       // Neutral utility colors.
-      light: "#FFFFFF",
-      dark: "#202225",
-      gray: "#99AAB5",
+      light: "#FF0000",
+      dark: "#FF0000",
+      gray: "#FF0000",
 
       // Discord-style palette shortcuts.
-      blurple: "#5865F2",
-      green: "#57F287",
-      yellow: "#FEE75C",
-      fuchsia: "#EB459E",
-      red: "#ED4245",
-      black: "#000000",
+      blurple: "#FF0000",
+      green: "#FF0000",
+      yellow: "#FF0000",
+      fuchsia: "#FF0000",
+      red: "#FF0000",
+      black: "#FF0000",
 
       // Feature-specific colors.
       giveaway: {
-        active: "#57F287",
-        ended: "#ED4245",
+        active: "#FF0000",
+        ended: "#FF0000",
       },
       ticket: {
-        open: "#57F287",
-        claimed: "#FAA61A",
-        closed: "#ED4245",
-        pending: "#99AAB5",
+        open: "#FF0000",
+        claimed: "#FF0000",
+        closed: "#FF0000",
+        pending: "#FF0000",
       },
-      economy: "#F1C40F",
-      birthday: "#E91E63",
-      moderation: "#9B59B6",
+      economy: "#FF0000",
+      birthday: "#FF0000",
+      moderation: "#FF0000",
 
       // Ticket priority color mapping.
       priority: {
-        none: "#95A5A6",
-        low: "#3498db",
-        medium: "#2ecc71",
-        high: "#f1c40f",
-        urgent: "#e74c3c",
+        none: "#FF0000",
+        low: "#FF0000",
+        medium: "#FF0000",
+        high: "#FF0000",
+        urgent: "#FF0000",
       },
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "RC HELPER",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -156,18 +156,18 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "RUPEE",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "RUPEES",
       // Currency symbol shown in balances.
-      symbol: "$",
+      symbol: "₹",
     },
 
     // Starting balance for new users.
-    startingBalance: 0,
+    startingBalance: 250,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity: 100000,
+    baseBankCapacity: 9999999999999999999999999999,
 
     // Daily reward amount.
     dailyAmount: 100,
@@ -255,7 +255,7 @@ export const botConfig = {
 
     // Allowed winner count range.
     minimumWinners: 1,
-    maximumWinners: 10,
+    maximumWinners: 99999999999999999999999999999,
 
     // Allowed giveaway duration range in milliseconds.
     // 300000 = 5 minutes.
@@ -281,7 +281,7 @@ export const botConfig = {
     announcementChannel: null,
 
     // Timezone used to calculate birthday dates.
-    timezone: "UTC",
+    timezone: "IST",
   },
 
   // =========================
